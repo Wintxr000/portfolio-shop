@@ -150,7 +150,7 @@ body.custom-bg::before{content:"";position:fixed;inset:0;background:rgba(8,10,28
 <body>
 <svg class="bg" aria-hidden="true" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#070a1f"/><stop offset=".55" stop-color="#1d1650"/><stop offset="1" stop-color="#6b2a6e"/></linearGradient><radialGradient id="moon"><stop offset="0" stop-color="#fff6d6"/><stop offset=".55" stop-color="#ffe9a8" stop-opacity=".45"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/></radialGradient><linearGradient id="tg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff6a2b"/><stop offset=".6" stop-color="#ffc24a"/><stop offset="1" stop-color="#fff3c4"/></linearGradient><linearGradient id="fog" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b0720" stop-opacity="0"/><stop offset="1" stop-color="#0b0720" stop-opacity=".85"/></linearGradient><filter id="gl" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter><path id="t" d="M0 0C-34 -70 -30 -190 0 -290C30 -190 34 -70 0 0Z" fill="url(#tg)"/></defs><rect width="1200" height="800" fill="url(#sky)"/><g fill="#fff" opacity=".75"><circle cx="90" cy="80" r="1.6"/><circle cx="210" cy="150" r="1.2"/><circle cx="330" cy="60" r="1.8"/><circle cx="470" cy="120" r="1.2"/><circle cx="560" cy="48" r="1.5"/><circle cx="690" cy="100" r="1.3"/><circle cx="790" cy="40" r="1.7"/><circle cx="1080" cy="90" r="1.4"/><circle cx="1150" cy="200" r="1.2"/><circle cx="60" cy="260" r="1.3"/><circle cx="420" cy="230" r="1.1"/><circle cx="1010" cy="300" r="1.5"/><circle cx="250" cy="330" r="1.2"/><circle cx="700" cy="250" r="1.1"/></g><circle cx="930" cy="170" r="160" fill="url(#moon)"/><circle cx="930" cy="170" r="62" fill="#fff4cf"/><path d="M0 560L140 440 260 530 420 400 560 520 700 430 860 540 1020 420 1200 520V800H0Z" fill="#161240" opacity=".92"/><path d="M0 650L180 550 340 630 520 530 700 640 900 550 1060 630 1200 580V800H0Z" fill="#0e0b30"/><g transform="translate(600 640)"><g filter="url(#gl)" opacity=".8"><use href="#t" transform="rotate(-88)"/><use href="#t" transform="rotate(-72) scale(1 .86)"/><use href="#t" transform="rotate(-56)"/><use href="#t" transform="rotate(-40) scale(1 .86)"/><use href="#t" transform="rotate(-24)"/><use href="#t" transform="rotate(-8) scale(1 .86)"/><use href="#t" transform="rotate(8)"/><use href="#t" transform="rotate(24) scale(1 .86)"/><use href="#t" transform="rotate(40)"/><use href="#t" transform="rotate(56) scale(1 .86)"/><use href="#t" transform="rotate(72)"/><use href="#t" transform="rotate(88) scale(1 .86)"/></g><g><use href="#t" transform="rotate(-88)"/><use href="#t" transform="rotate(-72) scale(1 .86)"/><use href="#t" transform="rotate(-56)"/><use href="#t" transform="rotate(-40) scale(1 .86)"/><use href="#t" transform="rotate(-24)"/><use href="#t" transform="rotate(-8) scale(1 .86)"/><use href="#t" transform="rotate(8)"/><use href="#t" transform="rotate(24) scale(1 .86)"/><use href="#t" transform="rotate(40)"/><use href="#t" transform="rotate(56) scale(1 .86)"/><use href="#t" transform="rotate(72)"/><use href="#t" transform="rotate(88) scale(1 .86)"/></g><path d="M-46 70Q-58 8 0 -2Q58 8 46 70Z" fill="#0b0720"/><path d="M-34 -4L-46 -58-14 -38Q0 -44 14 -38L46 -58 34 -4Q0 30 -34 -4Z" fill="#0b0720"/><path d="M-18 -16q6 -6 12 0M6 -16q6 -6 12 0" stroke="#ffd36a" stroke-width="3" fill="none" stroke-linecap="round"/></g><g fill="#ffd36a" opacity=".65"><circle cx="300" cy="420" r="3"/><circle cx="380" cy="500" r="2"/><circle cx="860" cy="450" r="3"/><circle cx="940" cy="520" r="2"/><circle cx="520" cy="380" r="2"/><circle cx="720" cy="390" r="3"/><circle cx="180" cy="540" r="2"/><circle cx="1040" cy="470" r="2"/></g><rect y="520" width="1200" height="280" fill="url(#fog)"/><rect width="1200" height="800" fill="#05061a" opacity=".22"/></svg>
 <div class="wrap">
-  <div class="top"><img class="logo" id="logo" alt="โลโก้ RP" width="38" height="38"><nav class="tabs" role="tablist" aria-label="เลือกหน้า"><button id="tabSell" role="tab" aria-selected="true">🛍️ ขายสินค้า</button><button id="tabBuy" role="tab" aria-selected="false">📦 รับของ</button></nav><label class="chip" title="เปลี่ยนภาพพื้นหลังเว็บ">🖼️ พื้นหลัง<input id="siteBg" type="file" accept="image/*" hidden></label><button class="chip" id="siteBgReset" type="button" title="กลับไปใช้พื้นหลังเดิม" hidden>↺</button><div class="ticker" aria-label="การอัปเดตล่าสุด"><span class="tk-badge">📢 อัปเดต</span><div class="tk-win" id="tkWin"><div class="tk-track" id="tkTrack"></div></div><button class="tk-btn" id="tkBtn" type="button" aria-label="หยุดเลื่อนอัตโนมัติ">⏸</button></div></div>
+  <div class="top"><img class="logo" id="logo" alt="โลโก้แมวน่ารัก" width="38" height="38"><nav class="tabs" role="tablist" aria-label="เลือกหน้า"><button id="tabSell" role="tab" aria-selected="true">🛍️ ขายสินค้า</button><button id="tabBuy" role="tab" aria-selected="false">📦 รับของ</button></nav><label class="chip" title="เปลี่ยนภาพพื้นหลังเว็บ">🖼️ พื้นหลัง<input id="siteBg" type="file" accept="image/*" hidden></label><button class="chip" id="siteBgReset" type="button" title="กลับไปใช้พื้นหลังเดิม" hidden>↺</button><div class="ticker" aria-label="การอัปเดตล่าสุด"><span class="tk-badge">📢 อัปเดต</span><div class="tk-win" id="tkWin"><div class="tk-track" id="tkTrack"></div></div><button class="tk-btn" id="tkBtn" type="button" aria-label="หยุดเลื่อนอัตโนมัติ">⏸</button></div></div>
   <header>
     <div style="flex:1 1 320px">
       <input id="shopName" class="shop-name" maxlength="40" aria-label="ชื่อร้าน">
@@ -176,6 +176,7 @@ body.custom-bg::before{content:"";position:fixed;inset:0;background:rgba(8,10,28
   <p class="hint" id="hint"></p>
   <div class="tools" id="tools"><span id="selInfo" class="selinfo"></span>
     <button class="chip go" id="mkPost">ภาพโพสต์สินค้าเดี่ยว</button>
+    <button class="chip go" id="mkPostAll" title="เลือกทั้งสินค้าเดี่ยวและเซ็ต แล้วรวมเป็นภาพเดียว">ภาพโพสต์รวม (เดี่ยว + เซ็ต)</button>
     <button class="chip go" id="mkPostSet">ภาพโพสต์เซ็ตโปรโมชั่น</button>
     <button class="chip go" id="mkSet">สร้างเซ็ตโปรโมชั่น</button>
     <button class="chip dng" id="delSel">🗑️ ลบที่เลือก</button></div>
@@ -213,7 +214,7 @@ function applyTx(){const t=T(),b=DB.page==='buy';
   $('dropB').textContent=t.dropB;$('dropS').textContent=t.dropS;$('setTitle').textContent=t.sec;
   $('tabSell').setAttribute('aria-selected',!b);$('tabBuy').setAttribute('aria-selected',b);
   document.body.classList.toggle('buy',b);document.title=t.title+' – '+S.shop;
-  $('addRP').textContent='➕ '+t.addRP;const lg=rpLogo(DB.page);$('logo').src=lg;setFav(lg)}
+  $('addRP').textContent='➕ '+t.addRP;$('logo').src=CAT_LOGO;setFav(CAT_LOGO)}
 function goPage(p){if(DB.page===p)return;DB.page=p;S=DB[p];sel.clear();selSets.clear();save();$('post').classList.remove('open');render();ticker();window.scrollTo({top:0})}
 $('tabSell').onclick=()=>goPage('sell');$('tabBuy').onclick=()=>goPage('buy');
 
@@ -257,7 +258,7 @@ function coll(its){const a=its.slice(0,4),m=its.length-4;return `<div class="col
 function renderSets(){
   const seller=true,box=$('sets');
   S.sets=S.sets.filter(s=>setInfo(s).its.length);selSets.forEach(id=>{if(!S.sets.some(s=>s.id===id))selSets.delete(id)});upBar();
-  $('setTitle').hidden=!S.sets.length;$('mkPostSet').hidden=!seller||!S.sets.length;box.className='list grid';
+  $('setTitle').hidden=!S.sets.length;$('mkPostSet').hidden=$('mkPostAll').hidden=!seller||!S.sets.length;box.className='list grid';
   box.innerHTML=S.sets.map(s=>{
     const{its}=setInfo(s),st=Number(s.stock),out=st<=0;
     const head=`${coll(its)}<div class="prow">${prowHTML(s)}</div>`;
@@ -310,6 +311,7 @@ $('contact').addEventListener('input',e=>{S.contact=e.target.value;save()});
 
 
 
+const CAT_LOGO='data:image/svg+xml;utf8,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd86b"/><stop offset="1" stop-color="#ff9ab0"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#bg)"/><path d="M50 53c10 0 12-12 5-16" fill="none" stroke="#ff9d4d" stroke-width="5" stroke-linecap="round"/><path d="M13 30L11 9l15 9zM51 30l2-21-15 9z" fill="#ff9d4d"/><path d="M16 26l-1-11 8 5zM48 26l1-11-8 5z" fill="#ffb3c4"/><ellipse cx="32" cy="37" rx="21" ry="18" fill="#ffad5c"/><path d="M26 21v5M32 19v6M38 21v5" stroke="#e67a2e" stroke-width="2" stroke-linecap="round"/><ellipse cx="32" cy="43" rx="12" ry="9" fill="#fff6ea"/><circle cx="23" cy="36" r="4" fill="#1b2253"/><circle cx="41" cy="36" r="4" fill="#1b2253"/><circle cx="24.4" cy="34.6" r="1.4" fill="#fff"/><circle cx="42.4" cy="34.6" r="1.4" fill="#fff"/><ellipse cx="16.5" cy="42" rx="3.6" ry="2.4" fill="#ff8fa6" opacity=".75"/><ellipse cx="47.5" cy="42" rx="3.6" ry="2.4" fill="#ff8fa6" opacity=".75"/><path d="M30 41h4l-2 2.6z" fill="#ff6f8e"/><path d="M32 43.6v1.6M28.4 46c1.8 1.6 3.6 1.6 3.6-.6 0 2.2 1.8 2.2 3.6.6" fill="none" stroke="#1b2253" stroke-width="1.5" stroke-linecap="round"/><path d="M10 40l7 1.5M10 45l7-1M54 40l-7 1.5M54 45l-7-1" stroke="#7a4a2a" stroke-width="1.2" stroke-linecap="round"/></svg>`);
 // ---- RP logo, RP slot, site background
 const _lg={};
 function rpLogo(kind){return _lg[kind]||(_lg[kind]=(()=>{
@@ -339,7 +341,7 @@ let tkT;
 function log(m,key){S.log=S.log||[];const f=S.log[0];if(key&&f&&f.k===key)S.log[0]={t:Date.now(),m,k:key};else S.log.unshift({t:Date.now(),m,k:key});S.log=S.log.slice(0,10);save();clearTimeout(tkT);tkT=setTimeout(ticker,500)}
 function ticker(){
   const hm=t=>new Date(t).toLocaleTimeString('th-TH',{hour:'2-digit',minute:'2-digit'});
-  const UPD=['🆕 ช่อง RP: กด “เพิ่มช่อง RP” แล้วใส่จำนวน RP ระบบคิดราคาให้เอง','💎 ตั้งราคา RP เองได้ เริ่มต้นที่ ฿1 ต่อ 1,000 RP','🔰 โลโก้ RP ใหม่ ดูเท่ ใช้ทั้งบนหน้าเว็บและในภาพโพสต์','📸 โพสต์เซ็ตได้เซ็ตละภาพ ติ๊กเลือกหลายเซ็ตแล้วกด “แยกเซ็ตละภาพ”','🖼️ อัปโหลดรูปเล็กหรือใหญ่ ระบบปรับให้คมชัดให้อัตโนมัติ','🌌 พื้นหลังใหม่ธีมจิ้งจอก 12 หาง กด “พื้นหลัง” เพื่อใช้รูปของคุณเอง','📐 ปรับหน้าตาให้เล็กกะทัดรัดขึ้น อ่านง่ายขึ้น'];
+  const UPD=['🆕 โลโก้แมวน่ารักที่มุมซ้ายบน','🆕 ภาพโพสต์รวม: ติ๊กทั้งสินค้าเดี่ยวและเซ็ต แล้วกด “ภาพโพสต์รวม” ได้ภาพเดียว','🆕 ช่อง RP: กด “เพิ่มช่อง RP” ใส่จำนวน RP ระบบคิดราคาให้ (เริ่มต้น ฿1 ต่อ 1,000 RP)','🆕 โพสต์เซ็ตเซ็ตละภาพ: ติ๊ก “แยกเซ็ตละภาพ” ตอนสร้างภาพเซ็ต','🆕 อัปโหลดรูปเล็กหรือใหญ่ ระบบปรับให้คมชัดอัตโนมัติ','🆕 พื้นหลังธีมจิ้งจอก 12 หาง กด “พื้นหลัง” เพื่อใช้รูปของคุณเอง','🆕 ปรับหน้าตาให้เล็กลงและอ่านง่ายขึ้น','✅ มี 2 หน้า: ขายสินค้า และ รับของ กดแท็บด้านบนเพื่อสลับ','✅ ติ๊กเลือกที่ป้าย แล้วใช้แถบด้านล่างเพื่อสร้างเซ็ต ทำภาพโพสต์ หรือลบ','✅ สร้างเซ็ตโปรโมชั่นได้แม้เลือกสินค้าชิ้นเดียว (คิดราคา × 12)','✅ หน้ารับของ: เซ็ตไม่แสดงส่วนลด','✅ ปรับจำนวนด้วยปุ่ม − และ + เห็นจำนวนชัดเจน','✅ เขียนคำอธิบายสินค้า และเลือกอิโมจิน่ารักๆ ได้','✅ ภาพโพสต์เปลี่ยนสีพื้นหลัง หรือใช้รูปของคุณเองได้','✅ แถบอัปเดตนี้เลื่อนอัตโนมัติ วางเมาส์เพื่อหยุด หรือกดปุ่ม ⏸'];
   const tips=[...UPD,DB.page==='buy'?'📦 หน้ารับของมีช่อง RP เหมือนกัน ใส่จำนวน RP ที่ต้องการรับได้เลย':'🛍️ หน้าขาย: ใส่จำนวน RP ที่อยากขาย แล้วดูราคารวมได้ทันที'];
   let a=['📊 '+S.items.length+' สินค้า · '+S.sets.length+' เซ็ต',...(S.log||[]).map(x=>'🕒 '+hm(x.t)+' '+x.m),...tips];
   while(a.length<6)a=a.concat(a);
@@ -352,7 +354,7 @@ function upBar(){
   $('selInfo').textContent=tot?'เลือกแล้ว '+[n?n+' สินค้า':'',m?m+' เซ็ต':''].filter(Boolean).join(' + '):'ติ๊กเลือกสินค้าหรือเซ็ตที่ป้ายก่อน แล้วเลือกว่าจะทำอะไร';
   $('mkSet').disabled=n<1;$('mkSet').textContent=T().mkSet;
   $('mkPost').disabled=!n;$('mkPost').textContent=T().mkPost+(n?` (${n})`:'');
-  $('mkPostSet').disabled=!m;$('mkPostSet').textContent=T().mkPostSet+(m?` (${m})`:'');
+  $('mkPostAll').disabled=!n||!m;$('mkPostSet').disabled=!m;$('mkPostSet').textContent=T().mkPostSet+(m?` (${m})`:'');
   const d=$('delSel');d.disabled=!tot;if(!d.dataset.arm)d.textContent='🗑️ ลบที่เลือก'+(tot?` (${tot})`:'');
   $('selAll').textContent=tot&&tot>=all?'ล้างการเลือก':'เลือกทั้งหมด';
 }
@@ -384,12 +386,12 @@ function wrap(c,t,x,y,m,n,lh){let line='',k=0;
 async function makePoster(kind,only){
   try{await document.fonts.load('800 40px Prompt','ก');await document.fonts.load('600 24px Sarabun','ก')}catch(e){}
   const W=1080,P=48,G=24,CW=(W-2*P-2*G)/3,F="'Prompt','Sarabun',sans-serif",INK='#1b2253',PINK=DB.page==='buy'?'#14917a':'#ff5c72',MANGO='#ffc83d',MUTE='#5d648f';
-  const isSet=kind==='set',list=isSet?S.sets.filter(s=>only?only.includes(s.id):selSets.has(s.id)).map(s=>({s,...setInfo(s)})):S.items.filter(i=>sel.has(i.id));
-  const HEAD=170,SEC=70,IN=24,TG=16,dY=(!isSet&&list.some(i=>i.desc))?64:0,PH=CW+118+dY;
+  const doS=kind!=='set',doG=kind!=='single',slist=doS?S.items.filter(i=>sel.has(i.id)):[],glist=doG?S.sets.filter(x=>only?only.includes(x.id):selSets.has(x.id)).map(x=>({s:x,...setInfo(x)})):[];
+  const HEAD=170,SEC=70,IN=24,TG=16,dY=slist.some(i=>i.desc)?64:0,PH=CW+118+dY;
   const geo=o=>{const n=o.its.length,cols=Math.min(n,3),tw=Math.min(452,(W-2*P-2*IN-(cols-1)*TG)/cols),rows=Math.ceil(n/3),dh=o.s.desc?100:0;
     return{cols,tw,dh,h:IN+48+dh+rows*(tw+80+TG)+60+IN}};
-  const body=isSet?list.reduce((a,o)=>a+geo(o).h+G,0):Math.ceil(list.length/3)*(PH+G);
-  const H=HEAD+SEC+body+90;
+  const body=(slist.length?SEC+Math.ceil(slist.length/3)*(PH+G):0)+(glist.length?SEC+glist.reduce((a,o)=>a+geo(o).h+G,0):0);
+  const H=HEAD+body+90;
   const imgs={};await Promise.all(S.items.map(async i=>{imgs[i.id]=await loadImg(i.img)}));
   const cv=document.createElement('canvas');cv.width=W;cv.height=H;const c=cv.getContext('2d');
   c.fillStyle=posterBg.color;c.fillRect(0,0,W,H);
@@ -397,20 +399,20 @@ async function makePoster(kind,only){
   c.fillStyle=INK;c.fillRect(0,0,W,HEAD-30);c.textBaseline='top';
   c.fillStyle='#fff';c.font='800 58px '+F;c.fillText(fit(c,S.shop,W-2*P),P,28);
   c.fillStyle=MANGO;c.font='600 28px '+F;c.fillText(fit(c,T().ct+S.contact,W-2*P),P,100);
-  c.fillStyle=INK;c.font='800 36px '+F;c.fillText(isSet?T().pS:T().pT,P,HEAD);c.fillStyle=MANGO;c.fillRect(P,HEAD+50,70,6);
+  const title=(t,y)=>{c.fillStyle=INK;c.font='800 36px '+F;c.fillText(t,P,y);c.fillStyle=MANGO;c.fillRect(P,y+50,70,6)};
   const chip=(t,x,y,bg,fg,font)=>{c.font=font;const w=c.measureText(t).width+36;c.fillStyle=bg;rr(c,x,y,w,46,23);c.fill();c.fillStyle=fg;c.fillText(t,x+18,y+8);return w};
   const shade=(x,y,w,h,t)=>{c.fillStyle='rgba(18,21,43,.58)';c.fillRect(x,y,w,h);c.fillStyle='#fff';c.font='800 38px '+F;c.textAlign='center';c.fillText(t,x+w/2,y+h/2-22);c.textAlign='left'};
-  const y0=HEAD+SEC;
-  if(!isSet){
-    list.forEach((it,k)=>{const x=P+(k%3)*(CW+G),yy=y0+Math.floor(k/3)*(PH+G),out=Number(it.stock)<=0;
+  let Y=HEAD;
+  if(slist.length){title(T().pT,Y);const y0=Y+SEC;Y=y0+Math.ceil(slist.length/3)*(PH+G);
+    slist.forEach((it,k)=>{const x=P+(k%3)*(CW+G),yy=y0+Math.floor(k/3)*(PH+G),out=Number(it.stock)<=0;
       c.save();rr(c,x,yy,CW,CW,24);c.clip();cover(c,imgs[it.id],x,yy,CW,CW);if(out)shade(x,yy,CW,CW,T().sold);c.restore();
       c.fillStyle=INK;c.font='700 26px '+F;c.fillText(fit(c,it.name,CW),x,yy+CW+14);
       if(it.desc){c.fillStyle=MUTE;c.font='600 21px '+F;wrap(c,it.desc,x,yy+CW+50,CW,2,28)}
       const cy=yy+CW+54+dY,w=chip('฿'+fmt(it.price),x,cy,PINK,'#fff','800 28px '+F);
       c.fillStyle=MUTE;c.font='600 22px '+F;c.fillText(it.type==='rp'?fmt(it.rp)+' RP':(out?T().zero:T().have+fmt(it.stock)+' ชิ้น'),x+w+12,cy+12)});
-  }else{
-    let yy=y0;
-    list.forEach(o=>{const g=geo(o),s=o.s,bw=W-2*P,out=Number(s.stock)<=0;
+  }
+  if(glist.length){title(T().pS,Y);let yy=Y+SEC;
+    glist.forEach(o=>{const g=geo(o),s=o.s,bw=W-2*P,out=Number(s.stock)<=0;
       c.fillStyle='#fff';rr(c,P,yy,bw,g.h,28);c.fill();c.lineWidth=5;c.strokeStyle=MANGO;c.stroke();
       c.fillStyle=INK;c.font='800 34px '+F;c.fillText(fit(c,s.name,bw-2*IN),P+IN,yy+IN);
       if(s.desc){c.fillStyle=MUTE;c.font='600 24px '+F;wrap(c,s.desc,P+IN,yy+IN+50,bw-2*IN,3,30)}
@@ -429,8 +431,8 @@ async function makePoster(kind,only){
 }
 function caption(kind,only){
   const L=['🏷️ '+S.shop,''];
-  if(kind==='set')S.sets.filter(s=>only?only.includes(s.id):selSets.has(s.id)).forEach(s=>{const i=setInfo(s);L.push('🎁 '+s.name+' ฿'+fmt(s.price)+(i.off&&DB.page!=='buy'?' (ประหยัด ฿'+fmt(i.off)+')':''));L.push('ประกอบด้วย '+i.its.map(x=>x.name).join(' + ')+(s.mult>1?' × '+s.mult+' ชิ้น':''));if(s.desc)L.push(s.desc);L.push('')});
-  else S.items.filter(i=>sel.has(i.id)).forEach(i=>{L.push('• '+(i.type==='rp'?'RP '+fmt(i.rp)+' (฿'+fmt(i.rate)+' ต่อ 1,000 RP) =':i.name)+' ฿'+fmt(i.price)+(i.type==='rp'?'':Number(i.stock)<=0?' ('+T().zero+')':' ('+T().have+fmt(i.stock)+' ชิ้น)'));if(i.desc)L.push('  '+i.desc)});
+  if(kind!=='single')S.sets.filter(s=>only?only.includes(s.id):selSets.has(s.id)).forEach(s=>{const i=setInfo(s);L.push('🎁 '+s.name+' ฿'+fmt(s.price)+(i.off&&DB.page!=='buy'?' (ประหยัด ฿'+fmt(i.off)+')':''));L.push('ประกอบด้วย '+i.its.map(x=>x.name).join(' + ')+(s.mult>1?' × '+s.mult+' ชิ้น':''));if(s.desc)L.push(s.desc);L.push('')});
+  if(kind!=='set')S.items.filter(i=>sel.has(i.id)).forEach(i=>{L.push('• '+(i.type==='rp'?'RP '+fmt(i.rp)+' (฿'+fmt(i.rate)+' ต่อ 1,000 RP) =':i.name)+' ฿'+fmt(i.price)+(i.type==='rp'?'':Number(i.stock)<=0?' ('+T().zero+')':' ('+T().have+fmt(i.stock)+' ชิ้น)'));if(i.desc)L.push('  '+i.desc)});
   L.push('',T().ct+S.contact);return L.join('\n')
 }
 let posterCv=null,posterKind='single',posterList=[],posterIdx=0;
@@ -445,7 +447,7 @@ async function regen(){const my=++rg,im=$('postImg');im.alt='กำลังส�
     posterList=out;posterIdx=Math.min(posterIdx,out.length-1);showPoster()}
   catch(e){im.alt='สร้างภาพไม่สำเร็จ ลองลดจำนวนสินค้า'}}
 function showPoster(){const im=$('postImg'),p=posterList[posterIdx];if(!p)return;posterCv=p.cv;im.src=p.cv.toDataURL('image/png');
-  im.alt=posterKind==='set'?'ภาพโพสต์เซ็ตโปรโมชั่น':'ภาพโพสต์สินค้าเดี่ยว';$('cap').value=caption(posterKind,p.o);
+  im.alt=posterKind==='set'?'ภาพโพสต์เซ็ตโปรโมชั่น':posterKind==='all'?'ภาพโพสต์รวมสินค้าเดี่ยวและเซ็ต':'ภาพโพสต์สินค้าเดี่ยว';$('cap').value=caption(posterKind,p.o);
   $('pager').innerHTML=posterList.length>1?posterList.map((x,i)=>`<button type="button" class="chip" data-i="${i}" aria-pressed="${i===posterIdx}">${i+1}. ${esc(x.name)}</button>`).join(''):'';
   $('saveAll').hidden=posterList.length<2}
 $('pager').addEventListener('click',e=>{const b=e.target.closest('button[data-i]');if(!b)return;posterIdx=+b.dataset.i;showPoster()});
@@ -458,11 +460,11 @@ $('bgFile').addEventListener('change',async e=>{const f=e.target.files[0];e.targ
   const im=await loadImg(URL.createObjectURL(f));if(!im){toast('เปิดรูปนี้ไม่ได้ ลองรูปอื่น');return}
   posterBg={color:posterBg.color,img:im};swatches();regen()});
 async function openPost(kind){
-  if(kind==='set'?!selSets.size:!sel.size){toast('ติ๊กเลือกสินค้าหรือเซ็ตก่อน');return}
+  if(kind==='set'?!selSets.size:kind==='all'?!(sel.size&&selSets.size):!sel.size){toast('ติ๊กเลือกสินค้าหรือเซ็ตก่อน');return}
   posterKind=kind;swatches();const im=$('postImg');im.removeAttribute('src');im.alt='กำลังสร้างภาพ…';$('cap').value=caption(kind);$('post').classList.add('open');posterCv=null;posterIdx=0;
   await regen();
 }
-$('mkPost').onclick=()=>openPost('single');$('mkPostSet').onclick=()=>openPost('set');
+$('mkPost').onclick=()=>openPost('single');$('mkPostSet').onclick=()=>openPost('set');$('mkPostAll').onclick=()=>openPost('all');
 
 async function getDl(){try{return window.claude&&claude.use?await claude.use('downloads'):null}catch(e){return null}}
 async function saveCv(cv,name,d){const b=await new Promise(r=>cv.toBlob(r,'image/png'));
